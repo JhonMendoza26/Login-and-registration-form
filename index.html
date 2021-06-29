@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Login and Registration Form</title>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximun-scale=1.0, minimum-scale=1.0">
+
+		<!-- Fonts and Icons -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+		<!-- CSS style -->
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" href="js/jquery/jqueryUI/jquery-ui-1.12.1/jquery-ui.min.css">
+		
+	</head>
+
+	<body>
+
+		<!-- HomePage -->
+
+		<h1 class="title">CalFive</h1>
+		<div class="contenedor">
+			<div class="tarjeta">
+				<img src="img/img-login.png">
+				<p>¡Que esperas! Conectate para seguir compartiendo momentos y estar al dia con tus amigos</p>
+				<button id="btn1" class="btn btn-primary">Iniciar sesión</button>
+			</div>
+			<div class="tarjeta">
+				<img src="img/img-register.png">
+				<p class="mensaje">¡Aún no tienes una cuenta! Registrate para conectarte y compartir momentos con tus amigos</p>
+				<button id="btn2" class=" btn btn-green">Crear cuenta</button>
+			</div>
+		</div>
+
+		<!-- Login Section -->
+
+		<div id="modal1" class="modal fade" tabindex="-1" role="dialog">
+		  <div class="modal-dialog modal-dialog-centered" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title">Iniciar sesión en CalFive</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        <form>
+				    <div class="form-group">
+				      <input type="email" class="form-control color-white" placeholder="Correo electrónico" id="email" name="email">
+				    </div>
+				    <div class="form-group">
+				      <input type="password" class="form-control color-white" id="pwd" placeholder="Contraseña" name="pswd">
+				    </div>
+				    <div class="container">
+			      		<div class="row justify-content-center">
+			      			<button type="submit" class="btn btn-primary">Iniciar sesión</button>
+			      			<a href="#" class="padd-esp">¿Olvidaste tu contraseña?</a>
+			      		</div>
+			      	</div>
+				</form>
+		      </div>
+		    </div>
+		  </div>
+		</div>  
+
+		<!-- Registration Section -->
+
+		<div id="modal2" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <!--      Para centrado-->
+			  <div class="modal-dialog" role="document">  
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h5 class="modal-title" id="exampleModalLabel">Registrarte es rápido y fácil</h5>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			      <div class="modal-body">
+			      	<form>
+			      		<div class="container">
+				      		<div class="row">
+				      			<div class="col-sm-6">
+				      				<div class="esp-name">
+				      					<input type="text" class="form-control" placeholder="Nombre" aria-label="Username" aria-describedby="basic-addon1">
+				      				</div>
+				      			</div>
+				      			<div class="col-sm-6">
+				      				<div class="esp-name">
+				      					<input type="text" class="form-control" placeholder="Apellido" aria-label="Firstname" aria-describedby="basic-addon1">
+				      				</div>
+				      			</div>
+				      			<div class="col-sm-12">
+				      				<div class="esp-name">
+				      					<input type="email" class="form-control" placeholder="Correo electrónico" id="exampleInputEmail1" aria-describedby="emailHelp">
+				      				</div>
+				      			</div>
+				      			<div class="col-sm-12">
+				      				<div class="esp-name">
+				      					<input type="password" class="form-control" placeholder="Contraseña nueva" minlength="8" id="exampleInputPassword1">
+				      				</div>			      				
+				      			</div>
+
+				      			<div class="col-sm-12">Fecha de nacimiento
+				      				<i class="fas fa-question-circle"></i>
+				      			</div>
+
+				      			<div class="col-sm-4 esp-name">
+			      					<select class="fech" id="inputGroupSelect01">
+									    <option selected>Día</option>
+									    <option value="1">1</option>
+									    <option value="2">2</option>
+									    <option value="3">3</option>
+									    <option value="4">4</option>
+									    <option value="5">5</option>
+									    <option value="6">6</option>
+									    <option value="7">7</option>
+									    <option value="8">8</option>
+									    <option value="9">9</option>
+									    <option value="10">10</option>
+									    <option value="11">11</option>
+									    <option value="12">12</option>
+									    <option value="13">13</option>
+									    <option value="14">14</option>
+									    <option value="15">15</option>
+									    <option value="16">16</option>
+									    <option value="17">17</option>
+									    <option value="18">18</option>
+									    <option value="19">19</option>
+									    <option value="20">20</option>
+									    <option value="21">21</option>
+									    <option value="22">22</option>
+									    <option value="23">23</option>
+									    <option value="24">24</option>
+									    <option value="25">25</option>
+									    <option value="26">26</option>
+									    <option value="27">27</option>
+									    <option value="28">28</option>
+									    <option value="29">29</option>
+									    <option value="30">30</option>
+									    <option value="31">31</option>
+									</select>
+				      			</div>
+				      			<div class="col-sm-4 esp-name">
+				      				<select class="fech" id="inputGroupSelect01">
+				      					<option selected>Mes</option>
+				      					<option value="1">ene</option>
+				      					<option value="2">feb</option>
+				      					<option value="3">mar</option>
+				      					<option value="4">abr</option>
+				      					<option value="5">may</option>
+				      					<option value="6">jun</option>
+				      					<option value="7">jul</option>
+				      					<option value="8">ago</option>
+				      					<option value="9">sep</option>
+				      					<option value="10">oct</option>
+				      					<option value="11">nov</option>
+				      					<option value="12">dic</option>
+				      				</select>
+				      			</div>
+				      			<div class="col-sm-4 esp-name">
+				      				<select class="fech" id="inputGroupSelect01">
+				      					<option selected>Año</option>
+				      					<option value="2021">2021</option>
+				      					<option value="2020">2020</option>
+				      					<option value="2019">2019</option>
+				      					<option value="2018">2018</option>
+				      					<option value="2017">2017</option>
+				      					<option value="2016">2016</option><
+				      				</select>
+				      			</div>
+
+				      			<div class="col-sm-12">Sexo
+				      				<i class="fas fa-question-circle"></i>
+				      			</div>
+				      			
+				      			<div class="col-sm-12">
+				      				<div class="form-check-inline relleno">
+									  <label class="form-check-label">
+									    <input type="radio" class="form-check-input" name="optradio">Mujer
+									  </label>
+									</div>
+									<div class="form-check-inline relleno">
+									  <label class="form-check-label">
+									    <input type="radio" class="form-check-input" name="optradio">Hombre
+									  </label>
+									</div>
+									<div class="form-check-inline relleno-per">
+									  <label class="form-check-label">
+									    <input type="radio" class="form-check-input" name="optradio">Prefiero no decirlo
+									  </label>
+									</div>  
+				      			</div>
+				      			 			
+
+				      			<div class="col-sm-12 politic">
+				      				Al hacer clic en "Registrarte", aceptas nuestras Condiciones, la Política de datos y la Política de cookies. Es posible que te enviemos notificaciones por SMS, que puedes desactivar cuando quieras.
+				      			</div>
+
+				      		</div> <!-- End Row -->
+				      	</div> <!-- End Container -->
+
+				      	<div class="container">
+				      		<div class="row justify-content-center">
+				      			<button type="submit" class="btn button-green">Registrarte</button>
+				      		</div>
+				      	</div>
+			      	</form> <!-- End Form -->
+			      </div> <!-- End Modal-Body -->
+			    </div>
+			</div>
+		</div> <!-- End Registration Section -->	
+
+		<!-- End Script validation -->
+
+		<!-- Script JavaScript -->
+		<script src="js/jquery/jquery-3.3.1.min.js"></script>	 	
+	    <script src="js/popper/popper.min.js"></script>	 	 	
+	    <script src="bootstrap/js/bootstrap.min.js"></script>   	
+	    <script src="js/jquery/jqueryUI/jquery-ui-1.12.1/jquery-ui.min.js"></script>  
+	   
+	    <script src="js/codigo.js"></script> 
+			
+	</body>
+</html>
